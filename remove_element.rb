@@ -1,5 +1,3 @@
-
-
 puts "give a list of numbers"
 nums = gets.chomp.split.map{ |s| s.to_i }
 
