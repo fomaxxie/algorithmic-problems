@@ -13,6 +13,6 @@ def majority_element(nums)
   candidate
 end
 
-puts "give a list of numbers"
+puts "provide an array prices"
 nums = gets.chomp.split.map{ |s| s.to_i }
 puts "The majority element is #{majority_element(nums)}"
