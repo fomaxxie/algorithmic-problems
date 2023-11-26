@@ -5,10 +5,10 @@ def length_of_last_word(s)
   last_word_length = 0
   index = s.length - 1
 
-  while index >= 0 && s[index] == ' '
+  while index >= 0 && s[index] == ""
     index -= 1
   end
-  
+
   while index >= 0 && s[index] != " "
     index -= 1
     last_word_length += 1
