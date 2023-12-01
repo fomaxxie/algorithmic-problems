@@ -1,3 +1,12 @@
+=begin
+  Given two strings ransomNote and magazine, return true if ransomNote can be constructed 
+  by using the letters from magazine and false otherwise. Each letter in magazine can only be used once in ransomNote.
+=end
+
+rescue => exception
+  
+end
+
 def can_construct(ransom_note, magazine)
   mag_char_count = Hash.new(0)
   i = j = 0
