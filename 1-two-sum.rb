@@ -6,11 +6,16 @@ You can return the answer in any order.
 
 def two_sum(nums, target)
   compliments = {}
+  # iterate over a given array
   nums.each_with_index do |num, index|
+    #calculate the compliment value to check if such value exists in a hash
     compliment = target - num
+    #check if the num value which is a key in a hash exists in a hash
     if compliments.key?(num)
+      #if it does, return an index (value in a hash) of this value (key in a hash) and the current index of the value
       return [compliments[num], index]
     end
+    #add compliment to a hash {2: 0, 7: 1, 11: 3}
     compliments[compliment] = index
   end
 end
