@@ -9,17 +9,17 @@ around the circuit once in the clockwise direction, otherwise return -1. If ther
 =end
 
 def can_complete_circuit(gas, cost)
-  start_tank = 0
-  current_tank = 0
-  total_tank = 0
+  start_station = 0
+  current_gas = 0
+  total_gas = 0
 
   (0...gas.size).each do |i|
-    total_tank += gas[i] - cost[i]
-    current_tank += gas[i] - cost[i]
+    total_gas += gas[i] - cost[i]
+    current_gas += gas[i] - cost[i]
 
-    if current_tank < 0
-      start_tank = i + 1
-      current_tank = 0
+    if current_gas < 0
+      start_station = i + 1
+      current_gas = 0
     end
   end
 
